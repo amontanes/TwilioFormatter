@@ -1,0 +1,25 @@
+---
+applications:
+- name: appTwilioFormatter
+  routes:
+  - route: aysa-twilioformatter.cfapps.eu10.hana.ondemand.com  
+  path: appTwilioFormatter
+  memory: 256M
+  services:
+   - TwilioFormatterUAA
+- name: appRouterTwilioFormatter
+  routes:
+  - route: approuter-aysa-twilioformatter.cfapps.eu10.hana.ondemand.com
+  path: appRouter
+  memory: 256M
+  env:
+    destinations: >
+      [
+        {
+          "name":"TwilioFormatter",
+          "url":"https://aysa-twilioformatter.cfapps.eu10.hana.ondemand.com",
+          "forwardAuthToken": true
+        }
+      ]
+  services:
+    - TwilioFormatterUAA   

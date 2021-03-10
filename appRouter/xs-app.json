@@ -1,0 +1,10 @@
+{
+    "routes": [
+      {
+        "source": "^/TwilioFormatter/(.*)$",
+        "target": "$1",
+        "destination": "TwilioFormatter"
+      }
+    ]
+  }
+  

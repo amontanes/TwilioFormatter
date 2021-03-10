@@ -1,0 +1,22 @@
+{
+  "name": "twilioformatter",
+  "version": "1.0.0",
+  "description": "CAI to Twilio format",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "baitcon",
+  "license": "ISC",
+  "dependencies": {
+    "@sap/xsenv": "^3.1.0",
+    "@sap/xssec": "^3.1.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "follow-redirects": "^1.13.3",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "passport": "^0.4.1",
+    "querystring": "^0.2.1"
+  }
+}
